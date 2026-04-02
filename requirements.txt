@@ -1,0 +1,7 @@
+fastapi
+uvicorn[standard]
+gunicorn
+python-dotenv
+vision-agents
+vision-agents-plugins-gemini
+vision-agents-plugins-getstream

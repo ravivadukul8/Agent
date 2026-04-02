@@ -8,8 +8,8 @@ from vision_agents.core.edge.types import User
 from vision_agents.plugins import gemini, getstream
 from pathlib import Path
 
-# ✅ Load .env.local from agent folder
-env_path = Path(__file__).parent / ".env.local"
+# ✅ Load .env from agent folder
+env_path = Path(__file__).parent / ".env"
 load_dotenv(dotenv_path=env_path)
 
 # ✅ Force set as system env vars
