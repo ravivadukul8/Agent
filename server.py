@@ -16,11 +16,6 @@ load_dotenv(dotenv_path=env_path)
 os.environ["STREAM_API_KEY"] = os.getenv("STREAM_API_KEY", "")
 os.environ["STREAM_API_SECRET"] = os.getenv("STREAM_API_SECRET", "")
 
-# ✅ Debug
-print("STREAM_API_KEY:", os.environ.get("STREAM_API_KEY"))
-print("STREAM_API_SECRET:", os.environ.get("STREAM_API_SECRET"))
-print("GEMINI_API_KEY:", os.getenv("GEMINI_API_KEY"))
-
 app = FastAPI()
 
 class StartAgentRequest(BaseModel):
